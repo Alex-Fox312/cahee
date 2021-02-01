@@ -1,0 +1,380 @@
+body {    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;}
+
+.go-to { position: fixed;
+    width: 5%;
+    margin-left: 93%;
+    margin-top: 39%;
+    z-index: 5;}
+
+.go-to:hover { width: 5.5%;}
+
+/*text-style*/
+
+@font-face { font-family: Raleway-Heavy;
+    src: url(/text-style/raleway/Raleway-ExtraBold.ttf);}
+
+@font-face { font-family: Raleway-Light;
+    src: url(/text-style/raleway/Raleway-Light.ttf)}
+
+@font-face { font-family: Raleway-Bold;
+    src: url(/text-style/raleway/Raleway-Bold.ttf)}
+
+@font-face {font-family: Pacifico-Regular;
+    src: url(/text-style/pacifico/Pacifico-Regular.ttf);}
+
+@font-face { font-family: blog-style;
+    src: url(/text-style/Lato/Lato-Bold.ttf);}
+    
+@font-face { font-family: hotter-style;
+    src: url(/text-style/Lato/Lato-Light.ttf);}
+
+/*block_mine*/
+
+.Fresh-Life-block { background-image: url(/img/fresh-life/strowbary.png);
+    background-size: 60%;
+    position: relative;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-color: #f9f8fb;
+    }
+
+.menu {display: flex;
+    position: relative;
+    left: 50%;
+    background-image: none;
+    border: none;
+    padding-top: 5%;}
+
+.button-menu { color: black;
+    border: none;
+    background-color: #f9f8fb;
+    outline: none;
+    font-family: Raleway-Bold;}
+
+.button-menu:hover {text-decoration: overline 3px #FF6033;
+    background-color: none;}
+
+.Cahhe { position: absolute;
+    font-size: 50px;
+    color: black;
+    background-image: none;
+    left: 15%;
+    top: 6%;
+    font-family: Pacifico-Regular;}
+
+.Fresh-Life {font-size: 60px;
+    color: black;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 12%;
+    background-image: none;
+    font-family: Raleway-Heavy;}
+
+.Fresh-text {font-size: 16px;
+    color: black;
+    margin-left: 12%;
+    margin-top: 1%;
+    background-image: none;
+    font-family: Raleway-Light;
+    font-size: 17px;}
+
+.get-free-now { width: 200px;
+    height: 55px;
+    background-color: #FF6033;
+    color: #ffffff;
+    border: none;
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-family: Raleway-Light;
+    font-size: 20px;}
+
+.get-free-now:hover { box-shadow: 0px 4px 10px #00000080;}
+/*block_"About_Us"*/
+
+.block-about-us { background-color: #00B7B7;}
+
+.img-about {width: 40%;
+    float: right;
+    position: relative;
+    left: -50%;
+    padding-top: 2%;}
+
+.box-text-about { display: flexbox;
+    position: relative;
+    left: 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;}
+
+.About-us { font-size: 90px;
+    color: #ffffff;
+    position: relative;
+    font-family: Raleway-Bold;}
+
+.text-about-us { font-size: 17px;
+    color: #ffffff;
+    position: relative;
+    font-family: Raleway-Light;
+    letter-spacing: 0px;}
+
+/*block_"our_servisec"*/
+
+.our-menu {display:flex;
+    flex-direction: column;
+    margin-left: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;}
+
+.our-text { font-size: 90px;
+    color: #ffffff;
+    margin-top: -40%;
+    margin-left: 80%;
+    z-index: 2;
+    white-space:nowrap;}
+
+.our-block { background-color: #70BFFF;}
+
+.our-button { background-color: #ffffff;
+    width: 62%;
+    border: none;}
+
+.button-distation { padding-bottom: 2%;}
+
+.our-button:hover { box-shadow: 0px 4px 10px #00000080;}
+
+.tomato { position: relative;
+    left: 90%;
+    width: 50%;
+    margin-top: -60%;
+    z-index: 1;}
+
+.icon { width: 70%;}
+
+/*block_gallery*/
+
+.Gallery-block {background-color: #FFE92F;}
+
+.Gallery { font-size: 76px;
+    padding-left: 40%;
+    padding-top: 5%;
+    font-family: Raleway-Bold;}
+
+.gallery-text {text-align: center;
+    padding-top: 1%;
+    font-family: Raleway-Light;}
+
+.gallery-img-1 {width: 160%;}
+
+.gallery-img-2 {padding-bottom: 1.3%;}
+
+.gallery-box-1 {width: 35%;
+    float: left;
+    padding-left: 7.5%;}
+.gallery-box-2 { display: block;
+    text-align: right;
+    padding-right: 7.5%;
+    }
+.gallery-box-3 { padding-top: 1.3%;
+    padding-left: 7.5%;
+    padding-bottom: 3%;}
+
+.gallery-img-5 {width: 45%;}
+
+.gallery-img-4 {padding-right: 1.7%;
+    width: 45%;}
+
+.gallery-view { background-color: #5585A2; 
+    margin-left: 45%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #ffffff;
+    border: none}
+
+.gallery-view:hover { box-shadow: 0px 4px 10px #00000080; }
+
+/*block_"sibscribe*/
+
+.Subscribe {position: relative;
+    background-repeat: no-repeat;
+    z-index: 2;}
+
+.back-sub {z-index:1;
+    width: 35%;
+    position: absolute;
+    padding-left: 62%;
+    padding-top: 7.5%;}
+
+.sub-button { padding: 1%;
+    background-color: #96b92c;
+    color: #ffffff;
+    border: none;
+    font-family: Raleway-lite;}
+
+.sub-button:hover { box-shadow: 0px 4px 10px #00000080;}
+
+.sub-txt { font-size: 46px;
+    margin-left: 15%;
+    padding-top: 5%;
+    color: rgb(39, 39, 39);
+    font-family: Raleway-Bold;}
+
+.sub-input { margin-bottom: 15%;
+    margin-left: 15%;
+    background-color: rgb(39, 39, 39);
+    border: none;
+    width: 40%;
+    color: #ffffff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 1%;}
+
+.sub-pod-txt { font-size: 18px;
+    margin-left: 15%;
+    font-family: Raleway-Light;}
+
+/*block_"blog"*/
+
+.backgound-blog {background-color:#ae7fda;
+    width: 100%;}
+
+.blog { color: #ffffff;
+    font-size: 92px;
+    font-family: blog-style;
+    text-align: center;
+    margin-top: -1%;}
+
+.hotter { color: #ffffff;
+    text-align: center;
+    font-family: hotter-style;
+    font-size: 18px;
+    margin-top: -5%;}
+
+.card { display: flex;
+    justify-content: center;
+    margin-top: 3%;}
+
+.card-img:hover {box-shadow: 0px 4px 10px #00000080;}
+
+.card-img { margin-right: 1.2%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;}
+
+.view-more { width: 10%;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 2%;    
+    background-color: #ce3131;
+    border: 0;
+    padding: 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #ffffff;
+    height: 10%;
+    margin-bottom: 5%;}
+
+.view-more:hover { box-shadow: 0px 4px 10px #00000080; ;
+    color: black;}
+
+.text-button { font-family: hotter-style;}
+
+/*fotter*/
+
+.footer-block{background-image: url(/img/form-contact/fon.png);
+    background-size: 100%;
+    position: relative;
+    z-index: 1;}
+
+.contact { text-align: center;
+    font-size: 90px;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    font-family: blog-style;}
+
+.pod-contact { position: relative;
+    font-size: 17px;
+    text-align: center;
+    top: 40px;
+    z-index: 1;
+    font-family: hotter-style;}
+
+.input-fotter {padding: 1%;
+    border: none;
+    background-color:#00C4C4;
+    opacity: 0.5;
+    color: #ffffff;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    width: 30%;
+    z-index: 1;  }
+
+.input-fotter:hover { opacity: 1.5;}
+
+.input-fotter-4:hover { opacity: 1.5;}
+
+.input-fotter-1:hover { opacity: 1.5;}
+
+.input-fotter-4 {padding: 1%;
+    border: none;
+    background-color:#00C4C4;
+    opacity: 0.7;
+    color: #ffffff;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    width: 30%;  
+    padding-bottom: 10%;
+    z-index: 1;}
+
+.input-fotter-1 {padding: 1%;
+    border: none;
+    background-color:#00C4C4;
+    opacity: 0.7;
+    color: #ffffff;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    width: 30%; 
+    margin-top: 6%;
+    z-index: 1;}
+
+.contact-firm { position: relative;
+    left: 57%;
+    margin-top: -25%;
+    padding-bottom: 30%;
+    z-index: 2;
+    font-family: hotter-style;}
+
+footer {background-color: #262626}
+
+.Love {color: #e22a51;}
+
+.cahee-fotter { color: #b9b9b9;
+    text-align: center;
+    margin-top: -2.5%;
+    margin-bottom: -2%;
+    font-family: Pacifico-Regular;
+    font-size: 30px;
+}
+
+.copirate { color: #b9b9b9;
+    margin-left: 5%;
+    padding-top: 2.5%;
+    font-family: hotter-style;
+    }
+
+.made {color: #b9b9b9;
+    text-align: right;
+    padding-right: 5%;
+    margin-top: -0.5%;
+    padding-bottom: 1.5%;
+    font-size: 18px;
+    font-family: hotter-style;}
