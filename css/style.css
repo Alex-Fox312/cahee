@@ -1,14 +1,99 @@
 body {    width: 100%;
+    margin: 0;
     overflow-x: hidden;
-    background-color: #ffffff;}
+    background-color: #ffffff;
+    position: relative;}
 
-.go-to { position: fixed;
-    width: 5%;
-    margin-left: 93%;
-    margin-top: 39%;
-    z-index: 5;}
+li, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-.go-to:hover { width: 5.5%;}
+ section {
+  display: block;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+    text-align: left;
+
+    z-index: 9;
+    padding-left: 3%;
+    padding-top: 5%;
+}
+
+@media (min-width:501px) {.container {display: none;}}
+
+
+.dropdown {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  height: 27px;
+  background: #d1d1d100;
+  border: none;
+  width: 5%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+a {
+  font-size: 12px;
+}
+
+.dropdown > a:active {
+  background: #d1d1d1;
+}
+.dropdown div {
+  float: right;
+  height: 27px;
+  width: 26px;
+    border: none;
+}
+
+.dropdown div:hover ul {
+  display: block;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: -1px;
+  right: -1px;
+    background-color: #ffffffb0;
+    font-family: Raleway-Light;
+    width: 380%;
+    text-align: center;
+}
+
+
+.dropdown ul a {
+  display: block;
+  line-height: 28px;
+  padding: 0 10px 1px;
+}
+.dropdown ul a:hover {
+  color: white;
+  background: #9b9b9b;
+  font-family: Raleway-Light;
+}
+
+.burg-img {
+    width: 100%;
+    justify-content: right;
+}
+
+
 
 /*text-style*/
 
@@ -30,7 +115,18 @@ body {    width: 100%;
 @font-face { font-family: hotter-style;
     src: url(/text-style/Lato/Lato-Light.ttf);}
 
+
+
 /*block_mine*/
+
+.block-menu {position: fixed;
+    background-color: #ffffff86;
+    width: 100%;
+    height: 20%;
+    z-index: 9;
+    display: none;}
+
+@media (min-width:800px){.block-menu {display:block;}}
 
 .Fresh-Life-block { background-image: url(/img/fresh-life/strowbary.png);
     background-size: 60%;
@@ -42,33 +138,42 @@ body {    width: 100%;
     }
 
 .menu {display: flex;
-    position: relative;
-    left: 50%;
+    position: fixed;
+    padding-left: 40%;
     background-image: none;
     border: none;
-    padding-top: 5%;}
+    padding-top: 5%;
+    flex-wrap: wrap;
+    z-index: 9;
+    padding-top: 5%;
+}
+
+@media (max-width: 500px) { .menu {display: none;}}
 
 .button-menu { color: black;
     border: none;
-    background-color: #f9f8fb;
+    background-color: #f9f8fb00;
     outline: none;
     font-family: Raleway-Bold;}
 
 .button-menu:hover {text-decoration: overline 3px #FF6033;
     background-color: none;}
 
-.Cahhe { position: absolute;
+.Cahhe { position: fixed;
     font-size: 50px;
     color: black;
     background-image: none;
     left: 15%;
+    z-index: 9;
     top: 6%;
     font-family: Pacifico-Regular;}
+
+@media (max-width: 500px) {.Cahhe {position: relative;}}
 
 .Fresh-Life {font-size: 60px;
     color: black;
     position: relative;
-    margin-top: 15%;
+    padding-top: 15%;
     margin-left: 12%;
     background-image: none;
     font-family: Raleway-Heavy;}
@@ -103,22 +208,30 @@ body {    width: 100%;
     left: -50%;
     padding-top: 2%;}
 
+@media (max-width: 500px) {.img-about{padding-top: 20%;}}
+
 .box-text-about { display: flexbox;
     position: relative;
     left: 50%;
     padding-top: 10%;
     padding-bottom: 10%;}
 
+@media (max-width: 500px) {.box-text-about{width: 40%;}}
+
 .About-us { font-size: 90px;
     color: #ffffff;
     position: relative;
     font-family: Raleway-Bold;}
+
+@media (max-width: 500px) {.About-us{font-size: 40px;}}
 
 .text-about-us { font-size: 17px;
     color: #ffffff;
     position: relative;
     font-family: Raleway-Light;
     letter-spacing: 0px;}
+
+@media (max-width: 500px) {.text-about-us {font-size: 12px;}}
 
 /*block_"our_servisec"*/
 
@@ -128,12 +241,20 @@ body {    width: 100%;
     padding-top: 10%;
     padding-bottom: 10%;}
 
+@media (max-width: 500px) {.our-menu {padding-top: 30%;
+    padding-left: 15%;}}
+
 .our-text { font-size: 90px;
     color: #ffffff;
     margin-top: -40%;
     margin-left: 80%;
     z-index: 2;
     white-space:nowrap;}
+
+@media (max-width: 500px) {.our-text{margin-left: -17%;
+    font-size: 60px;
+    margin-top: -80%;
+    padding-bottom: 40%;}}
 
 .our-block { background-color: #70BFFF;}
 
@@ -151,6 +272,8 @@ body {    width: 100%;
     margin-top: -60%;
     z-index: 1;}
 
+    @media  (max-width: 500px) {.tomato {display: none;}}
+
 .icon { width: 70%;}
 
 /*block_gallery*/
@@ -162,17 +285,28 @@ body {    width: 100%;
     padding-top: 5%;
     font-family: Raleway-Bold;}
 
+@media (max-width: 500px) {.Gallery {margin-left: -15%;
+    font-size: 64px;}}
+
 .gallery-text {text-align: center;
     padding-top: 1%;
     font-family: Raleway-Light;}
 
+@media (max-width: 500px) {.gallery-text { padding: 5%;}}    
+
 .gallery-img-1 {width: 160%;}
 
+@media (max-width: 500px) {.gallery-img-1 {width: 248%;
+margin-left: -5%;}}
+
 .gallery-img-2 {padding-bottom: 1.3%;}
+
+@media (max-width: 500px) {.gallery-img-2 { width: 94%;}}
 
 .gallery-box-1 {width: 35%;
     float: left;
     padding-left: 7.5%;}
+
 .gallery-box-2 { display: block;
     text-align: right;
     padding-right: 7.5%;
@@ -186,6 +320,8 @@ body {    width: 100%;
 .gallery-img-4 {padding-right: 1.7%;
     width: 45%;}
 
+    @media (max-width: 500px) {.gallery-img-3 {width: 93%;}}
+
 .gallery-view { background-color: #5585A2; 
     margin-left: 45%;
     margin-bottom: 5%;
@@ -195,6 +331,8 @@ body {    width: 100%;
     padding-right: 2%;
     color: #ffffff;
     border: none}
+
+    @media (max-width: 500px) {.gallery-view {margin-left: 40%;}}
 
 .gallery-view:hover { box-shadow: 0px 4px 10px #00000080; }
 
@@ -224,6 +362,8 @@ body {    width: 100%;
     color: rgb(39, 39, 39);
     font-family: Raleway-Bold;}
 
+@media (max-width: 500px)  {.sub-txt {font-size: 28px;}}
+
 .sub-input { margin-bottom: 15%;
     margin-left: 15%;
     background-color: rgb(39, 39, 39);
@@ -238,6 +378,9 @@ body {    width: 100%;
     margin-left: 15%;
     font-family: Raleway-Light;}
 
+@media (max-width: 500px) {.sub-pod-txt{font-size: 12px;
+    padding-right: 2rem;}}
+
 /*block_"blog"*/
 
 .backgound-blog {background-color:#ae7fda;
@@ -248,6 +391,8 @@ body {    width: 100%;
     font-family: blog-style;
     text-align: center;
     margin-top: -1%;}
+
+    @media (max-width: 500px) {.blog{font-size: 64px;}}
 
 .hotter { color: #ffffff;
     text-align: center;
@@ -267,6 +412,10 @@ body {    width: 100%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;}
 
+    @media (max-width: 500px) { .card-img { width: 5%;}
+    .card {display: block;
+        padding-left: 4%;}}
+
 .view-more { width: 10%;
     text-align: center;
     margin-left: 45%;
@@ -282,6 +431,9 @@ body {    width: 100%;
     height: 10%;
     margin-bottom: 5%;}
 
+    @media (max-width: 500px) {.view-more { width: 25%;
+    margin-left: 10rem;}}
+
 .view-more:hover { box-shadow: 0px 4px 10px #00000080; ;
     color: black;}
 
@@ -294,12 +446,16 @@ body {    width: 100%;
     position: relative;
     z-index: 1;}
 
+@media (max-width: 500px)  {.footer-block {background-size: 200%;}}
+
 .contact { text-align: center;
     font-size: 90px;
     position: relative;
     top: 30px;
     z-index: 1;
     font-family: blog-style;}
+
+    @media (max-width: 500px) {.contact{font-size: 60px;}}
 
 .pod-contact { position: relative;
     font-size: 17px;
@@ -346,12 +502,18 @@ body {    width: 100%;
     margin-top: 6%;
     z-index: 1;}
 
+@media (max-width: 500px) {.input-fotter-1 { margin-top: 15%;}} 
+
 .contact-firm { position: relative;
     left: 57%;
     margin-top: -25%;
     padding-bottom: 30%;
     z-index: 2;
     font-family: hotter-style;}
+
+@media (max-width: 500px) {.contact-firm { left: 45%;
+    padding-right: 15rem;
+    margin-top: -35%;}}
 
 footer {background-color: #262626}
 
