@@ -242,7 +242,7 @@ a {
     padding-bottom: 10%;}
 
 @media (max-width: 500px) {.our-menu {padding-top: 30%;
-    padding-left: 15%;}}
+    padding-left: 8%;}}
 
 .our-text { font-size: 90px;
     color: #ffffff;
@@ -515,8 +515,7 @@ margin-left: -5%;}}
     font-family: hotter-style;}
 
 @media (max-width: 500px) 
-    {.contact-firm { left: 45%;
-    margin-top: -35%;}}
+    {.contact-firm { left: 45%;}}
 
 footer {background-color: #262626}
 
