@@ -511,8 +511,8 @@ margin-left: -5%;}}
     z-index: 2;
     font-family: hotter-style;}
 
-@media (max-width: 500px) {.contact-firm { left: 45%;
-    padding-right: 15rem;
+@media (max-width: 500px) 
+    {.contact-firm { left: 45%;
     margin-top: -35%;}}
 
 footer {background-color: #262626}
